@@ -7,6 +7,10 @@ $ sphp **phpversion**, e.g.:
 sphp 7.4
 ```
 # Before switching 
+## Install XCode components (required)
+```
+xcode-select --install
+```
 
 ## Install HomeBrew
 
