@@ -78,7 +78,8 @@ ini files are located at:
 /opt/Homebrew/etc/php/8.0/php.ini
 ```
 
-Also you need add modules to httpd.conf   
+# Apache PHP Setup
+You need add modules to httpd.conf   
 
 ## For Intel Macs 
-* 
+ 
