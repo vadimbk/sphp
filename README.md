@@ -28,8 +28,19 @@ to restart Apache:
 ```
 breq services restart apache
 ```
-## Install php
-You need add modules to httpd.conf   
+Other control options (start/stop):
+```
+brew services stop httpd
+brew services start httpd
+```
+
+## php install replacement
+You need to install php-fpm version to replace too slow standard php 7.3 installatio wnich called by Apple "deprecated"
+```
+brew tap shivammathur/php
+```
+
+Also need add modules to httpd.conf   
 
 ## For Intel Macs 
 * 
