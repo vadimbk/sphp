@@ -56,8 +56,29 @@ brew install shivammathur/php/php@8.0
 ```
 You need to know that 5.6-7.2 versions are deprecated and may cause some errors, but they are need to lauch old sites.
 
+ini files are located at:
+### Fof intel Macs:
+```
+/usr/local/etc/php/5.6/php.ini
+/usr/local/etc/php/7.0/php.ini
+/usr/local/etc/php/7.1/php.ini
+/usr/local/etc/php/7.2/php.ini
+/usr/local/etc/php/7.3/php.ini
+/usr/local/etc/php/7.4/php.ini
+/usr/local/etc/php/8.0/php.ini
+```
+### For Silicon M1 Macs:
+```
+/opt/Homebrew/etc/php/5.6/php.ini
+/opt/Homebrew/etc/php/7.0/php.ini
+/opt/Homebrew/etc/php/7.1/php.ini
+//opt/Homebrew/etc/php/7.2/php.ini
+/opt/Homebrew/etc/php/7.3/php.ini
+/opt/Homebrew/etc/php/7.4/php.ini
+/opt/Homebrew/etc/php/8.0/php.ini
+```
 
-Also need add modules to httpd.conf   
+Also you need add modules to httpd.conf   
 
 ## For Intel Macs 
 * 
