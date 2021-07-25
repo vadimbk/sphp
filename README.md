@@ -72,7 +72,7 @@ ini files are located at:
 /opt/Homebrew/etc/php/5.6/php.ini
 /opt/Homebrew/etc/php/7.0/php.ini
 /opt/Homebrew/etc/php/7.1/php.ini
-//opt/Homebrew/etc/php/7.2/php.ini
+/opt/Homebrew/etc/php/7.2/php.ini
 /opt/Homebrew/etc/php/7.3/php.ini
 /opt/Homebrew/etc/php/7.4/php.ini
 /opt/Homebrew/etc/php/8.0/php.ini
