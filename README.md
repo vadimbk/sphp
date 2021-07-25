@@ -44,7 +44,7 @@ At first, add repository
 ```
 brew tap shivammathur/php
 ```
-Firther, add php for various versions:
+and install all php versions:
 ```
 brew install shivammathur/php/php@5.6
 brew install shivammathur/php/php@7.0
@@ -77,9 +77,50 @@ ini files are located at:
 /opt/Homebrew/etc/php/7.4/php.ini
 /opt/Homebrew/etc/php/8.0/php.ini
 ```
-
 # Apache PHP Setup
-You need add modules to httpd.conf   
+You need add modules to httpd.conf after LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
 
 ## For Intel Macs 
- 
+(php7.4 as a standard)
+```
+#LoadModule php5_module /usr/local/opt/php@5.6/lib/httpd/modules/libphp5.so
+#LoadModule php7_module /usr/local/opt/php@7.0/lib/httpd/modules/libphp7.so
+#LoadModule php7_module /usr/local/opt/php@7.1/lib/httpd/modules/libphp7.so
+#LoadModule php7_module /usr/local/opt/php@7.2/lib/httpd/modules/libphp7.so
+#LoadModule php7_module /usr/local/opt/php@7.3/lib/httpd/modules/libphp7.so
+LoadModule php7_module /usr/local/opt/php@7.4/lib/httpd/modules/libphp7.so
+#LoadModule php_module /usr/local/opt/php@8.0/lib/httpd/modules/libphp.so
+```
+
+## For M1 (ARM) Macs
+```
+#LoadModule php5_module /opt/homebrew/opt/php@5.6/lib/httpd/modules/libphp5.so
+#LoadModule php7_module /opt/homebrew/opt/php@7.0/lib/httpd/modules/libphp7.so
+#LoadModule php7_module /opt/homebrew/opt/php@7.1/lib/httpd/modules/libphp7.so
+#LoadModule php7_module /opt/homebrew/opt/php@7.2/lib/httpd/modules/libphp7.so
+#LoadModule php7_module /opt/homebrew/opt/php@7.3/lib/httpd/modules/libphp7.so
+LoadModule php7_module /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so
+#LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
+```
+
+Search for the block
+```
+<IfModule dir_module>
+    DirectoryIndex index.html
+</IfModule>
+```
+and replace it with 
+```
+<IfModule dir_module>
+    DirectoryIndex index.php index.html
+</IfModule>
+
+<FilesMatch \.php$>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+```
+
+# Downloading the script
+
+
+# Testing
