@@ -155,4 +155,3 @@ sphp 5.6
 ```
 Refresh phpinfo window (Cmd-R)
 
-N'joy :)
