@@ -1,9 +1,8 @@
-vadim@Mac-mini httpd % cat /opt/homebrew/bin/sphp
 #!/bin/bash
 # Creator: Phil Cook
 # Modified: Andy Miller
 # Adopted for M1 Macs: Vadym Khomakha
-# July 24, 2021
+# Release date: July 24, 2021
 
 osx_major_version=$(sw_vers -productVersion | cut -d. -f1)
 osx_minor_version=$(sw_vers -productVersion | cut -d. -f2)
