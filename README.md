@@ -27,8 +27,9 @@ and install HomeBrew Apache version
 ```
 brew install httpd
 ```
-test installation: open http://localhost:8080 in browser
-to restart Apache:
+test installation: open http://localhost:8080 in browser.
+
+To restart Apache:
 ```
 breq services restart apache
 ```
