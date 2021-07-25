@@ -23,7 +23,7 @@ xcode-select --install
 sudo apachectl stop
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 ````
-and install 
+and install HomeBrew Apache version
 ```
 brew install httpd
 ```
@@ -92,7 +92,7 @@ LoadModule php7_module /usr/local/opt/php@7.4/lib/httpd/modules/libphp7.so
 #LoadModule php_module /usr/local/opt/php@8.0/lib/httpd/modules/libphp.so
 ```
 
-## For M1 (ARM) Macs
+## For Silicon M1 Macs
 ```
 #LoadModule php5_module /opt/homebrew/opt/php@5.6/lib/httpd/modules/libphp5.so
 #LoadModule php7_module /opt/homebrew/opt/php@7.0/lib/httpd/modules/libphp7.so
@@ -120,7 +120,33 @@ and replace it with
 </FilesMatch>
 ```
 
-# Downloading the script
-
+# Downloading and activating the script
+## For Silicon M1 Macs
+```
+curl -L https://raw.githubusercontent.com/vadimbk/sphp/main/sphp > /opt/homebrew/bin/sphp
+chmod +x /opt/homebrew/bin/sphp
+```
+## For Intel Macs
+```
+curl -L https://raw.githubusercontent.com/vadimbk/sphp/main/sphp >  /usr/local/bin/sphp
+chmod +x /usr/local/bin/sphp
+```
 
 # Testing
+Add info.php to Apache root directory
+## For Silicon M1 Macs
+```
+printf "<?php\nphpinfo();\n?>" > /opt/homebrew/var/www/info.php
+```
+## For Intes Macs
+```
+printf "<?php\nphpinfo();\n?>" > /usr/loca/var/www/info.php
+```
+
+And run the test:
+```
+http://localhost:8080/info.php 
+```
+You should see an phpinfo() page
+
+N'joy :)
