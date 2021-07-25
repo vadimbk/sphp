@@ -138,7 +138,7 @@ Add info.php to Apache root directory
 ```
 printf "<?php\nphpinfo();\n?>" > /opt/homebrew/var/www/info.php
 ```
-## For Intes Macs
+## For Intel Macs
 ```
 printf "<?php\nphpinfo();\n?>" > /usr/loca/var/www/info.php
 ```
