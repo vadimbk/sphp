@@ -143,10 +143,16 @@ printf "<?php\nphpinfo();\n?>" > /opt/homebrew/var/www/info.php
 printf "<?php\nphpinfo();\n?>" > /usr/loca/var/www/info.php
 ```
 
-And run the test:
+And run the test - open in browser
 ```
 http://localhost:8080/info.php 
 ```
 You should see an phpinfo() page
+
+**Changing a version and re-test:**
+```
+sphp 5.6
+```
+Refresh phpinfo window (Cmd-R)
 
 N'joy :)
