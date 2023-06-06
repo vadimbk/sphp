@@ -1,5 +1,5 @@
 # sphp
-Switching php version for M1/Itel MACs
+Switching php version for M1/Intel MACs
 
 # Usage: 
 $ sphp **phpversion**, e.g.:
@@ -40,7 +40,7 @@ brew services start httpd
 ```
 
 ## php install replacement
-You  need to install php-fpm version to replace too slow standard php 7.3 installatio wnich called by Apple "deprecated"
+You  need to install php-fpm version to replace too slow standard php 7.3 installation which called by Apple "deprecated"
 At first, add repository
 ```
 brew tap shivammathur/php
@@ -54,8 +54,10 @@ brew install shivammathur/php/php@7.2
 brew install shivammathur/php/php@7.3
 brew install shivammathur/php/php@7.4
 brew install shivammathur/php/php@8.0
+brew install shivammathur/php/php@8.1
+brew install shivammathur/php/php@8.2
 ```
-You need to know that 5.6-7.2 versions are deprecated and may cause some errors, but they are need to lauch old sites.
+You need to know that 5.6-7.2 versions are deprecated and may cause some errors, but they are need to launch old sites.
 
 ini files are located at:
 ### Fof intel Macs:
@@ -67,6 +69,8 @@ ini files are located at:
 /usr/local/etc/php/7.3/php.ini
 /usr/local/etc/php/7.4/php.ini
 /usr/local/etc/php/8.0/php.ini
+/usr/local/etc/php/8.1/php.ini
+/usr/local/etc/php/8.2/php.ini
 ```
 ### For Silicon M1 Macs:
 ```
@@ -77,6 +81,8 @@ ini files are located at:
 /opt/Homebrew/etc/php/7.3/php.ini
 /opt/Homebrew/etc/php/7.4/php.ini
 /opt/Homebrew/etc/php/8.0/php.ini
+/opt/Homebrew/etc/php/8.1/php.ini
+/opt/Homebrew/etc/php/8.2/php.ini
 ```
 # Apache PHP Setup
 You need add modules to httpd.conf after LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
