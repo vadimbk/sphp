@@ -31,7 +31,7 @@ test installation: open http://localhost:8080 in browser.
 
 To restart Apache:
 ```
-breq services restart apache
+brew services restart apache
 ```
 Other control options (start/stop):
 ```
