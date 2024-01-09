@@ -56,6 +56,7 @@ brew install shivammathur/php/php@7.4
 brew install shivammathur/php/php@8.0
 brew install shivammathur/php/php@8.1
 brew install shivammathur/php/php@8.2
+brew install shivammathur/php/php@8.3
 ```
 You need to know that 5.6-7.2 versions are deprecated and may cause some errors, but they are need to launch old sites.
 
@@ -71,6 +72,7 @@ ini files are located at:
 /usr/local/etc/php/8.0/php.ini
 /usr/local/etc/php/8.1/php.ini
 /usr/local/etc/php/8.2/php.ini
+/usr/local/etc/php/8.3/php.ini
 ```
 ### For Silicon M1 Macs:
 ```
@@ -83,6 +85,7 @@ ini files are located at:
 /opt/Homebrew/etc/php/8.0/php.ini
 /opt/Homebrew/etc/php/8.1/php.ini
 /opt/Homebrew/etc/php/8.2/php.ini
+/opt/Homebrew/etc/php/8.3/php.ini
 ```
 # Apache PHP Setup
 You need add modules to httpd.conf after LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
