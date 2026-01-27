@@ -57,6 +57,8 @@ brew install shivammathur/php/php@8.0
 brew install shivammathur/php/php@8.1
 brew install shivammathur/php/php@8.2
 brew install shivammathur/php/php@8.3
+brew install shivammathur/php/php@8.4
+brew install shivammathur/php/php@8.5
 ```
 You need to know that 5.6-7.2 versions are deprecated and may cause some errors, but they are need to launch old sites.
 
@@ -73,6 +75,8 @@ ini files are located at:
 /usr/local/etc/php/8.1/php.ini
 /usr/local/etc/php/8.2/php.ini
 /usr/local/etc/php/8.3/php.ini
+/usr/local/etc/php/8.4/php.ini
+/usr/local/etc/php/8.5/php.ini
 ```
 ### For Silicon M1 Macs:
 ```
@@ -86,6 +90,8 @@ ini files are located at:
 /opt/Homebrew/etc/php/8.1/php.ini
 /opt/Homebrew/etc/php/8.2/php.ini
 /opt/Homebrew/etc/php/8.3/php.ini
+/opt/Homebrew/etc/php/8.4/php.ini
+/opt/Homebrew/etc/php/8.5/php.ini
 ```
 # Apache PHP Setup
 You need add modules to httpd.conf after LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
@@ -100,6 +106,11 @@ You need add modules to httpd.conf after LoadModule rewrite_module lib/httpd/mod
 #LoadModule php7_module /usr/local/opt/php@7.3/lib/httpd/modules/libphp7.so
 LoadModule php7_module /usr/local/opt/php@7.4/lib/httpd/modules/libphp7.so
 #LoadModule php_module /usr/local/opt/php@8.0/lib/httpd/modules/libphp.so
+#LoadModule php_module /usr/local/opt/php@8.1/lib/httpd/modules/libphp.so
+#LoadModule php_module /usr/local/opt/php@8.2/lib/httpd/modules/libphp.so
+#LoadModule php_module /usr/local/opt/php@8.3/lib/httpd/modules/libphp.so
+#LoadModule php_module /usr/local/opt/php@8.4/lib/httpd/modules/libphp.so
+#LoadModule php_module /usr/local/opt/php@8.5/lib/httpd/modules/libphp.so
 ```
 
 ## For Silicon M1 Macs
@@ -110,7 +121,12 @@ LoadModule php7_module /usr/local/opt/php@7.4/lib/httpd/modules/libphp7.so
 #LoadModule php7_module /opt/homebrew/opt/php@7.2/lib/httpd/modules/libphp7.so
 #LoadModule php7_module /opt/homebrew/opt/php@7.3/lib/httpd/modules/libphp7.so
 LoadModule php7_module /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so
-#LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
+#LoadModule php_module /opt/homebrew/opt/php@8.0/lib/httpd/modules/libphp.so
+#LoadModule php_module /opt/homebrew/opt/php@8.1/lib/httpd/modules/libphp.so
+#LoadModule php_module /opt/homebrew/opt/php@8.2/lib/httpd/modules/libphp.so
+#LoadModule php_module /opt/homebrew/opt/php@8.3/lib/httpd/modules/libphp.so
+#LoadModule php_module /opt/homebrew/opt/php@8.4/lib/httpd/modules/libphp.so
+#LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
 ```
 
 Search for the block
