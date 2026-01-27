@@ -1,5 +1,5 @@
 # sphp
-Switching php version for M1/Intel MACs
+Switching php version for Apple silicon/Intel MACs
 
 # Usage: 
 $ sphp **phpversion**, e.g.:
@@ -63,7 +63,7 @@ brew install shivammathur/php/php@8.5
 You need to know that 5.6-7.2 versions are deprecated and may cause some errors, but they are need to launch old sites.
 
 ini files are located at:
-### Fof intel Macs:
+### For Intel Macs:
 ```
 /usr/local/etc/php/5.6/php.ini
 /usr/local/etc/php/7.0/php.ini
@@ -78,7 +78,7 @@ ini files are located at:
 /usr/local/etc/php/8.4/php.ini
 /usr/local/etc/php/8.5/php.ini
 ```
-### For Silicon M1 Macs:
+### For Apple silicon Macs:
 ```
 /opt/Homebrew/etc/php/5.6/php.ini
 /opt/Homebrew/etc/php/7.0/php.ini
@@ -113,7 +113,7 @@ LoadModule php7_module /usr/local/opt/php@7.4/lib/httpd/modules/libphp7.so
 #LoadModule php_module /usr/local/opt/php@8.5/lib/httpd/modules/libphp.so
 ```
 
-## For Silicon M1 Macs
+## For Apple silicon Macs
 ```
 #LoadModule php5_module /opt/homebrew/opt/php@5.6/lib/httpd/modules/libphp5.so
 #LoadModule php7_module /opt/homebrew/opt/php@7.0/lib/httpd/modules/libphp7.so
@@ -147,7 +147,7 @@ and replace it with
 ```
 
 # Downloading and activating the script
-## For Silicon M1 Macs
+## For Apple silicon Macs
 ```
 curl -L https://raw.githubusercontent.com/vadimbk/sphp/main/sphp > /opt/homebrew/bin/sphp
 chmod +x /opt/homebrew/bin/sphp
@@ -160,7 +160,7 @@ chmod +x /usr/local/bin/sphp
 
 # Testing
 Add info.php to Apache root directory
-## For Silicon M1 Macs
+## For Apple silicon Macs
 ```
 printf "<?php\nphpinfo();\n?>" > /opt/homebrew/var/www/info.php
 ```
